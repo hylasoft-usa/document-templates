@@ -7,3 +7,8 @@ Hyla Soft Templates to use with [markdawn](https://github.com/itajaja/markdawn/)
 ## Usage
 
 Read the markdawn guide to understand how to use these templates
+
+## Current Templates
+
+- **short**: Simple template for short documents
+- **proposal**: Full fledged template for proposal documents
