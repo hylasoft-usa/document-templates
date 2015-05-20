@@ -1,0 +1,39 @@
+.title-page {
+  padding-top: 2.8in;
+  page-break-after: always;
+}
+
+.title-page .subtitle {
+  padding-bottom: 1.3in;
+}
+
+.title-page .version{
+  font-weight: bold;
+  padding-bottom: .3in;
+}
+
+.title-page .recipient{
+  text-align: right;
+}
+
+.title-page .disclaimer{
+  padding-top: 1.9in;
+  float: right;
+  font-size: .9em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.markdown-body h1 {
+  page-break-before: always;
+}
+
+.markdown-body {
+  font-size: 13pt;
+}
+
+/*show toc only up to second level*/
+.toc>ul>li>ul>li>ul {
+  display: none;
+}

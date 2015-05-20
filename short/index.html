@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link href="../_common/solarized_light.css" rel="stylesheet" type="text/css">
+    <link href="../_common/style.css" rel="stylesheet" type="text/css">
+    <link href="../_common/fonts.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="title-page">
+      <div class="title">{{Title}}</div>
+      <div class="subtitle">{{Subtitle}}</div>
+    </div>
+    <article class="markdown-body">
+      {{content}}
+    </article>
+    <div id="pageHeader">
+      <img class="banner" src="../_common/banner.png">
+      <p>55 W. Monroe Street<p>
+      <p>Suite 2575<p>
+      <p>Chicago, IL 60603<p>
+    </div>
+    <div id="pageFooter">
+      <p>{{page}} of {{pages}}</p>
+    </div>
+  </body>
+  <!-- fix for https://github.com/ariya/phantomjs/issues/10735#issuecomment-14994043 -->
+  <img style="display: none" src="../_common/banner.png">
+</html>

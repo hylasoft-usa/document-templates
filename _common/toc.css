@@ -1,0 +1,37 @@
+.toc {
+  page-break-after: always;
+  line-height: 1.6;
+}
+
+.toc ul {
+  font-size: 14pt;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.toc>ul>li>a {
+  font-weight: bold;
+}
+
+.toc dl {
+  margin: 0;
+}
+
+.toc ul a {
+  color: #333333;
+  text-decoration: initial;
+}
+
+.toc .toc-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  line-height: 1.1;
+  font-family: "Open Sans";
+  color: rgb(207, 222, 0);
+  font-weight: 300;
+}
+
+.toc .toc-title {
+  margin-bottom: 16px;
+  font-size: 21pt;
+}
