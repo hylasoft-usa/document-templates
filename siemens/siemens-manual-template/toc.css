@@ -1,0 +1,88 @@
+.toc {
+  page-break-after: always;
+}
+
+.toc>ul {
+  font-size: 13pt;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc>ul>li>a,
+.toc>ul>li>dl {
+  font-weight: bold;
+  line-height: 2.5;
+}
+
+.toc dl {
+  margin: 0;
+}
+
+.toc ul a {
+  color: #333333;
+  text-decoration: initial;
+  padding-left: 8pt;
+}
+
+.toc>ul dd {
+  display: none;
+}
+
+.toc .toc-title {
+  padding-top: 45pt;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 20pt;
+  font-size: 24pt;
+}
+
+/* Crappy fix until we do a better TOC plugin */
+.toc dl,
+.toc dt {
+  display: inline;
+}
+
+.title-page-toc {
+  margin-top: 90pt;
+  float: right;
+  line-height: 1.6;
+  width: 230pt;
+  margin-right: -0.6in;
+}
+
+.title-page-toc ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title-page-toc ul>li,
+.title-page-toc-title {
+  border-bottom: 2px solid black;
+  font-size: 16pt;
+  padding-top: 0.7em;
+  position: relative;
+}
+
+.title-page-toc-title {
+  margin: 0;
+  padding: 0;
+}
+
+.title-page-toc>ul ul,
+.title-page-toc>ul dd {
+  display: none;
+}
+
+.title-page-toc dl {
+  margin: 0;
+}
+
+.title-page-toc-title,
+.title-page-toc ul a {
+  color: #333333;
+  padding-left: 7pt;
+  text-decoration: initial;
+}
+
+

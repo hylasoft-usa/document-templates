@@ -1,0 +1,29 @@
+.title-page {
+  page-break-after: always;
+}
+
+.title-page .product {
+  margin-top: 2.35in;
+}
+
+.title-page .product,
+.title-page .title {
+  font-size: 19.5pt;
+  font-weight: bold;
+  line-height: 2.5em;
+}
+
+.title-page .edition {
+  margin-top: 4.35in;
+  font-weight: bold;
+}
+
+.title-page .siemens-logo {
+  font-size: 55pt;
+  margin-top: -10pt;
+  font-family: 'Siemens';
+}
+
+.preamble {
+  page-break-after: always;
+}

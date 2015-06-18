@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link href="../../_common/hljs-default.css" rel="stylesheet" type="text/css">
+    <link href="../../_common/fonts.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="toc.css" rel="stylesheet" type="text/css">
+    <link href="numbering.css" rel="stylesheet" type="text/css">
+    <link href="blockquotes.css" rel="stylesheet" type="text/css">
+    <link href="code-blocks.css" rel="stylesheet" type="text/css">
+    <link href="footer.css" rel="stylesheet" type="text/css">
+    <link href="images.css" rel="stylesheet" type="text/css">
+    <link href="lists.css" rel="stylesheet" type="text/css">
+    <link href="sections.css" rel="stylesheet" type="text/css">
+    <link href="tables.css" rel="stylesheet" type="text/css">
+    <link href="title-page.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="title-page">
+      <div class="title-page-toc">
+        <p class="title-page-toc-title">Table of Contents</p>
+        {{TOC}}
+      </div>
+      <div class="siemens-logo">s</div>
+      <div class="product">{{Product}} {{Version}}</div>
+      <div class="title">{{Title}}</div>
+      <div class="edition">Edition {{Date}}</div>
+    </div>
+    <div class="markdown-body preamble">
+      <h4>Guidelines</h4>
+      <p>This manual contains notes of varying importance that should be read with care; i.e.:</p>
+      <blockquote>
+      <p><strong>Important</strong></p>
+      <p>Contains essential information regarding handling the product, the product itself or a specific part of the documentation.</p>
+      </blockquote>
+      <p><strong>Note</strong> Provides supplementary information regarding handling the product, the product itself or a specific part of the documentation.</p>
+      <h4>Trademarks</h4>
+      <p>All names identified by <sup>®</sup> are registered trademarks of Siemens AG. The remaining trademarks in this publication may be trademarks whose use by third parties for their own purposes could violate the rights of the owner.</p>
+      <h4>Disclaimer of Liability</h4>
+      <p>We have reviewed the contents of this publication to ensure consistency with the hardware and software described. Since variance cannot be precluded entirely, we cannot guarantee full consistency. However, the information in this publication is reviewed regularly and any necessary corrections are included in subsequent editions.</p>
+    </div>
+    <div class="toc">
+      <div class="toc-title">
+        Table of Contents
+      </div>
+      {{TOC}}
+    </div>
+    <article class="markdown-body">
+      {{content}}
+    </article>
+    <div id="pageFooter">
+      <p id="pageCount">{{page}}</p>
+      <p id="product">{{Product}} - V{{Version}}</p>
+    </div>
+  </body>
+  <script>
+    // function to add captions. Without jquery because phantomjs complains about it
+    document.addEventListener('DOMContentLoaded', function() {
+      var imgs = document.getElementsByTagName('img');
+      for (var i = 0; i < imgs.length; i++) {
+        var img = imgs[i];
+        var alt = img.alt;
+        if (alt) {
+          var caption = document.createElement("p");
+          caption.classList.add("caption");
+          caption.innerText = alt;
+          img.parentNode.insertBefore(caption, img.nextSibling);
+        }
+      }
+    });
+  </script>
+</html>

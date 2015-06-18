@@ -1,0 +1,16 @@
+#pageFooter {
+  font-size: 14pt;
+  margin: 0.3em;
+}
+
+#pageFooter p {
+  margin: 0.3em;
+}
+
+#pageFooter #pageCount {
+  float: left;
+}
+
+#pageFooter #product {
+  float: right;
+}

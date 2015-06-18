@@ -1,0 +1,12 @@
+.markdown-body blockquote {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}

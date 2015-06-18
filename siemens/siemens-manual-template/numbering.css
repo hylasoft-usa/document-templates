@@ -1,0 +1,57 @@
+.markdown-body {
+  counter-reset: h1;
+}
+
+.markdown-body h1 {
+  counter-reset: h2;
+}
+
+.markdown-body h2 {
+  counter-reset: h3;
+}
+/*
+.markdown-body h3 {
+  counter-reset: h4;
+}*/
+
+.markdown-body h1::before {
+  counter-increment: h1;
+  content: counter(h1) '\00a0\00a0';
+}
+
+.markdown-body h2::before {
+  counter-increment: h2;
+  content: counter(h1) '.' counter(h2) '\00a0\00a0';
+}
+
+.markdown-body h3::before {
+  counter-increment: h3;
+  content: counter(h1) '.' counter(h2) '.' counter(h3) '\00a0\00a0';
+}
+
+/*toc numbering*/
+
+.title-page-toc ul,
+.toc ul {
+  counter-reset: item;
+}
+
+.title-page-toc li::before,
+.toc li::before {
+  content: counters(item, '.') '\00a0\00a0';
+  counter-increment: item;
+}
+
+.title-page-toc li::before{
+  position: absolute;
+  right: -38pt;
+  top: 0;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.title-page-toc ul,
+.toc ul {
+  list-style-type: none;
+}
+

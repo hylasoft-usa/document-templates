@@ -1,0 +1,69 @@
+.markdown-body li {
+  padding-bottom: 6pt;
+}
+
+.markdown-body>li {
+  padding-bottom: 10pt;
+}
+
+.markdown-body li:last-child{
+  padding-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 6pt;
+  margin-bottom: 0;
+  padding-left: 3em;
+}
+
+.markdown-body>ul,
+.markdown-body>ol {
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+}
+
+.markdown-body ul ol,
+.markdown-body ul ul,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  padding-left: 2em;
+}
+
+.markdown-body li>p {
+  margin: 0;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
