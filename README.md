@@ -10,5 +10,6 @@ Read the markdawn guide to understand how to use these templates
 
 ## Current Templates
 
-- **short**: Simple template for short documents
-- **proposal**: Full fledged template for proposal documents
+- **hyla/short**: Simple template for short documents
+- **hyla/proposal**: Full fledged template for proposal documents
+- **siemens/siemens-manual-template**: SIT-like manual template
