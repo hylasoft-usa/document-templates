@@ -1,13 +1,20 @@
 @font-face {
+  font-family: 'Siemens';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Siemens.ttf);
+}
+
+@font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: url(OpenSans-Light.ttf);
+  src: url(fonts/OpenSans-Light.ttf);
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(OpenSans-Regular.ttf);
+  src: url(fonts/OpenSans-Regular.ttf);
 }
